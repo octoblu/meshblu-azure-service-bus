@@ -1,0 +1,41 @@
+{
+  "name": "meshblu-azure-service-bus",
+  "version": "1.0.0",
+  "description": "A test client that forwards azure service bus data into meshblu",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover _mocha -- -R spec --require coffee-coverage/register-istanbul",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octoblu/meshblu-azure-service-bus.git"
+  },
+  "keywords": [
+    "IoT",
+    "Meshblu",
+    "Azure"
+  ],
+  "author": "Octoblu <serveradmin@octoblu.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/octoblu/meshblu-azure-service-bus/issues"
+  },
+  "homepage": "https://github.com/octoblu/meshblu-azure-service-bus#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coffee-coverage": "^1.0.1",
+    "coffee-script": "^1.10.0",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5",
+    "mocha-istanbul": "^0.2.0",
+    "sinon": "^1.17.4",
+    "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "azure": "^0.10.6",
+    "meshblu-config": "^4.0.0",
+    "meshblu-firehose-socket.io": "^1.7.0",
+    "meshblu-http": "^5.4.0"
+  }
+}
